@@ -47,29 +47,29 @@ from telegram.ext import (
 # hardcoded; set these as env vars (or export them before running the bot).
 # ============================================================================
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8896443043:AAHZIILXSm4wvW3MwQJehK4SZKJJuk4Afn0")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8654804052:AAE3ne1SgEGLOd11LwkUtntAM50LcNpFE4M")
 
 # Leave BOT_USERNAME empty to have it auto-detected at startup via getMe().
-BOT_USERNAME = os.getenv("BOT_USERNAME", "AviVoteBot").lstrip("@")
+BOT_USERNAME = os.getenv("BOT_USERNAME", "KshatriyaVotingBot").lstrip("@")
 
 ADMIN_IDS = [
     int(x.strip())
-    for x in os.getenv("ADMIN_IDS", "6889457333").split(",")
+    for x in os.getenv("ADMIN_IDS", "7513729138").split(",")
     if x.strip().lstrip("-").isdigit()
 ]
 
 # Shown as the "Buy Paid Votes" contact and used anywhere the bot needs to
 # point a user at a human for support / paid votes.
-SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "").lstrip("@")
+SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "KSHATRIYA_OP").lstrip("@")
 
 DB_FILE = os.getenv("DB_FILE", "bot_database.db")
 USERS_JSON = os.getenv("USERS_JSON", "users.json")
 
-BOT_NAME = os.getenv("BOT_DISPLAY_NAME", "AVI GIVEAWAYS BOT")
+BOT_NAME = os.getenv("BOT_DISPLAY_NAME", "KSHATRIYA GIVEAWAYS BOT")
 
 # "Hosted By" credit shown on every participant channel post.
-HOSTED_BY_NAME = os.getenv("HOSTED_BY_NAME", "AVI CODEX")
-HOSTED_BY_USERNAME = os.getenv("HOSTED_BY_USERNAME", "AVI_CODEX").lstrip("@")
+HOSTED_BY_NAME = os.getenv("HOSTED_BY_NAME", "TEAM SN")
+HOSTED_BY_USERNAME = os.getenv("HOSTED_BY_USERNAME", "KSHATRIYA_OP").lstrip("@")
 
 # ----------------------------------------------------------------------------
 # Paid Votes (BDT). There's no external payment-gateway API key involved here
@@ -79,8 +79,8 @@ HOSTED_BY_USERNAME = os.getenv("HOSTED_BY_USERNAME", "AVI_CODEX").lstrip("@")
 # PAYMENT_NUMBER empty to keep the old "contact admin" behaviour instead.
 # ----------------------------------------------------------------------------
 CURRENCY_SYMBOL = os.getenv("CURRENCY_SYMBOL", "৳")
-PAYMENT_METHOD_NAME = os.getenv("PAYMENT_METHOD_NAME", "bKash")
-PAYMENT_NUMBER = os.getenv("PAYMENT_NUMBER", "")
+PAYMENT_METHOD_NAME = os.getenv("PAYMENT_METHOD_NAME", "UPI")
+PAYMENT_NUMBER = os.getenv("PAYMENT_NUMBER", "singhthakurharsh369@fam")
 
 
 def _parse_vote_packages(raw: str):
